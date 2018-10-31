@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% if partners %}
+        {% for partner in partners %}
+            <h3>{{ partner.name }}</h3>
+            <img src="{{ partner.image.url }}">
+            <p>{{ partner.description }}</p>
+        {% endfor %}
+    {% else %}
+        <h3>You have no news</h3>
+    {% endif %}
+{% endblock %}

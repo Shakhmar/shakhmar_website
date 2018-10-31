@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block title %}Register{% endblock %}
-{% block content %}
+{% block login %}
 <form class="col-md-6 offset-md-3 mt-4 login" method="POST" >
     {% csrf_token %}
     {{ form.as_p }}
